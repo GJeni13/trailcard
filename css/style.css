@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  
+  background-image: url('/puplic/dimly.avif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 10px;
+  
+  justify-content: center;
+  margin: 20px auto;
+  width: 420px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(230, 46, 46);
+  border: 2px solid #10f323;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32px;
+  color: transparent;
+}
+
+.card.matched, .card.flipped {
+  background-color: rgb(234, 240, 224);
+  color: #325674;
+}
+
+#controls {
+  margin: 20px;
+}
+
+#timer {
+  color: red;
+  margin-top: 10px;
+  font-size: 18px;
+
+}
+
+#congratulations-message {
+  margin-top: 20px;
+  font-size: 45px;
+color: #ff6347;
+text-shadow: #0b89f0;
+
+}
+h1{
+  color:rgb(235, 100, 194);
+  font-size: 50px;
+  font-style: oblique;
+
+}
+#play-again-button
+{
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+}
+#play-again-button:hover
+{
+  background-color: #e71515; 
+}
+#play-again-button:active
+{
+  background-color: #07f307;
+}
+
+#reset-button {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+}
+
+#reset-button:hover {
+  background-color: #e71515; 
+}
+
+#reset-button:active {
+  background-color: #07f307;
+}
+
